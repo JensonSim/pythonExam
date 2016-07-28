@@ -1,5 +1,3 @@
-Language ="Python"
-
 import mosquitto, os, urlparse
 
 # Define event callbacks
