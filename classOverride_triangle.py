@@ -15,9 +15,15 @@ class Triangle(object):
 class Equilateral(Triangle):
     """docstring for Equilateral"""
     angle = 60
-    def __init__(self, angle1, angle2, angle3):
-    super(Equilateral, self).__init__()
-    	self.angle1 = self.angle
-    	self.angle2 = self.angle
-    	self.angle3 = self.angle
+    def __init__(self, angle1, angle2,angle3):
+   		Triangle.__init__(self,angle1,angle2,angle3)
+   		self.angle1 = self.angle
+   		self.angle2 = self.angle
+   		self.angle3 = self.angle
+
+newTRI = Equilateral(80,70,80)
+
+print newTRI.check_angles()
+print newTRI.angle3
+
        
