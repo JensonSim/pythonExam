@@ -13,11 +13,11 @@ class Triangle(object):
             return False
             
 class Equilateral(Triangle):
-            	"""docstring for Equilateral"""
-            	angle = 60
-            	def __init__(self):
-            		super(Equilateral, self).__init__()
-            		self.angle1 = self.angle
-            		self.angle2 = self.angle
-            		self.angle3 = self.angle
+    """docstring for Equilateral"""
+    angle = 60
+    def __init__(self, angle1, angle2, angle3):
+    super(Equilateral, self).__init__()
+    	self.angle1 = self.angle
+    	self.angle2 = self.angle
+    	self.angle3 = self.angle
        
