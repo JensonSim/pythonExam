@@ -1,26 +1,29 @@
 def is_prime(x):
-	if x<2|x==0:
+	if x<2 or x==0:
+		print '1'
 		return False
 	elif x==2:
 		return True
 	else:
-	    for n in range(2, x-1):
+	    for n in range(2, x):
 			if x%n==0:
 				print x,"/",n, x,"is False"
-				return False
+				a = False
+				return a
 			else:
-				pass
+				print x, "/", n, x, "is True"
+				return True
 
-		print x, "/", n, x, "is True"
-		return True
-	
 
-print is_prime(7)
-print is_prime(7)
-print is_prime(14)
+			
+
 print is_prime(3)
+print is_prime(4)
+
+print is_prime(7)
+
 print is_prime(9)
-print is_prime(12)
-print is_prime(21)
-print is_prime(0)
+
+
+
 
