@@ -1,0 +1,6 @@
+def digit_sum(n):
+    total = 0
+    b = str(n)
+    for i in b:
+        total +=int(i)
+    return total
